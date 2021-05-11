@@ -10,7 +10,7 @@ class RaffleController
   def initialize(bot)
     @bot = bot
 
-    redis_url = "#{ENV["StreamSell_Bot"]}/1"
+    redis_url = "#{ENV["https://T.me/StreamSell_Bot"]}/1"
     @raffle = Raffle.new(redis_url)
     @logger = Logger.new(STDOUT)
   end
